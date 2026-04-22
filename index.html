@@ -1,9 +1,7 @@
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const produto = params.get("produto");
+  const produto = "https://meli.la/1tGmQPF";
 
-  let link = "";
-
-  if (produto === "1") {
-    link = "https://meli.la/1tGmQPF";
+  setTimeout(() => {
+    window.location.href = produto;
+  }, 1000);
 </script>
