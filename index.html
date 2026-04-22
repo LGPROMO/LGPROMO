@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Redirecionando...</title>
-</head>
-<body>
-
-<p>Redirecionando para a oferta...</p>
-
 <script>
-  setTimeout(function() {
-  ------------LINK AQUI---------
-    window.location.href = "https://meli.la/2yDcMC5";
+  const params = new URLSearchParams(window.location.search);
+  const produto = params.get("produto");
+
+  let link = "";
+
+  if (produto === "1") {
+    link = "https://meli.la/1xpdvJh";
+  } 
+  else if (produto === "2") {
+    link = "https://meli.la/1qN8pYU";
+  } 
+  else if (produto === "3") {
+    link = "https://meli.la/1FqHvJW";
+  }
+
+  setTimeout(() => {
+    window.location.href = link;
   }, 1000);
 </script>
-
-</body>
-</html>
